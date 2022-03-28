@@ -29,6 +29,7 @@
 <div id = "qrcode"></div>
 
 <a id = "namelink"></a>
+<a id = "maplink">MAP LINK</a>
 
 <div style = "display:none"><canvas id = "maincanvas"></canvas></div>
 
@@ -46,6 +47,8 @@ var mainGVM = new GVM(maincanvas,0.5*innerWidth - 10,0.5*innerWidth -10);
 
 gvmArray = [];
 
+array = [];
+
 geometroncoinfeed = {};
 var httpcHypercube = new XMLHttpRequest();
 httpcHypercube.onreadystatechange = function(){
@@ -61,6 +64,8 @@ httpcHypercube.onreadystatechange = function(){
                 document.getElementById("namelink").href = geometroncoinfeed.url;
                 document.getElementById("namelink").innerHTML = geometroncoinfeed.name;
                 
+                document.getElementById("maplink").href = geometroncoinfeed.maplink;
+                
                 loadfeed();
             }
         };
@@ -75,11 +80,15 @@ httpcHypercube.send();
 
 
 
+array = [];
 function loadfeed(){
     gvmArray = [];
     document.getElementById("feed").innerHTML = "";
-    for(var index = 0;index < robotfeed.length;index++){
-        var newdiv = document.createElement("span");
+    array = geometroncoinfeed.array;
+    
+    for(var index = 0;index < array.length;index++){
+        var newdiv = document.createElement("A");
+        newdiv.href = array[index].url;
         var newcan = document.createElement("CANVAS");
         newcan.className = "feedcan";
         newdiv.style.marginTop = 0.05*feedwidth + "px";
@@ -91,10 +100,10 @@ function loadfeed(){
         var newGVM = new GVM(newcan,feedlinkwidth,feedlinkwidth);
         newGVM.hypercube = mainGVM.hypercube;
         gvmArray.push(newGVM);
-        newGVM.drawGlyph(robotfeed[index]);    
+        newGVM.drawGlyph(array[index].coin);    
         
         var datadiv = document.createElement("DIV");
-        datadiv.innerHTML = robotfeed[index];
+        datadiv.innerHTML = array[index].coin;
         datadiv.className = "data";
         newdiv.appendChild(datadiv);
         newdiv.onclick = function(){
@@ -108,7 +117,7 @@ function loadfeed(){
 
 
 
-codesquaresize = 512;
+codesquaresize = 80;
 marginsize = 40;
 fontsize = 12;
 
@@ -140,7 +149,15 @@ qrcode = new QRCode(document.getElementById("qrcode"), {
     z-index:2;
     font-family:courier;
 }
-
+#maplink{
+    position:absolute;
+    top:0px;
+    right:0px;
+    font-size:40px;
+    z-index:2;
+    font-family:courier;
+    
+}
 body{
     overflow:hidden;
 }
