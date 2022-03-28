@@ -1,14 +1,11 @@
-## [up a level](../)
+# Geometron Coin
 
-## Icon Set
+###  [trashrobot/geometroncoin]
 
- - [home](index.html)
- - [editor.php](editor.php)
- - [programarduinoxyz.html](programarduinoxyz.html)
- - [icon3d.html](icon3d.html)
- - [icon64.html](icon64.html)
- - [global page replicator code link](https://raw.githubusercontent.com/LafeLabs/pibrary/main/iconset/php/replicator.txt)
- - [local replicator code link](php/replicator.txt)
+self replicating media.
 
+coins are printed and placed on the map.
+
+coins represent  links, click on the 
 
 

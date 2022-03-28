@@ -1,5 +1,5 @@
 {
-    "url":"https://www.trashrobot.org/geometroncoin/trashrobot/",
+    "url":"https://www.trashrobot.org/geometroncoin/",
     "name":"trashrobot",
     "maplink":"https://www.openstreetmap.org/#map=19/39.14587/-76.90249",
     "array" : [
