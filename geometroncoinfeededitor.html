@@ -140,6 +140,14 @@ function loadfeed(){
         newdiv.onclick = function(){
             glyph = this.getElementsByClassName("data")[0].innerHTML;
             document.getElementById("glyphinput").value = glyph;
+            
+            var newcoin = {};
+            newcoin.coin = glyph;
+            newcoin.url = "https://www.trashrobot.org/";
+            geometroncoinfeed.unshift(newcoin);
+            savecoinfeed();
+            loadcoinfeed();
+
         }
         
         var newimg = document.createElement("IMG");
@@ -186,6 +194,16 @@ function loadcoinfeed(){
         gvmArray2.push(newGVM);
         newGVM.drawGlyph(geometroncoinfeed[index].coin);    
         
+        var newinput = document.createElement("INPUT");
+        newdiv.appendChild(newinput);
+        newinput.id = "index" + index.toString();
+        newinput.value = geometroncoinfeed[index].url;
+        newinput.onchange = function(){
+            var localindex = parseInt(this.id.substring(5));
+            console.log(localindex);
+            geometroncoinfeed[localindex].url = this.value;
+            savecoinfeed();
+        }
 
         var newimg = document.createElement("IMG");
         newimg.src = "iconsymbols/delete.svg";
