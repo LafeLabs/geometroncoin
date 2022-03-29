@@ -1,11 +1,6 @@
 # [Geometron Coin](https://github.com/LafeLabs/geometroncoin)
 
-###  [trashrobot/geometroncoin](https://www.trashrobot.org/geometroncoin/)
-
-self replicating media.
-
-coins are printed and placed on the map.
-
-coins represent  links, click on the 
-
-coins printed with the [TRASH ROBOT](https://www.trashrobot.org/) system.
+ - [global replicator link](https://raw.githubusercontent.com/LafeLabs/geometroncoin/main/php/replicator.txt)
+ - [http://localhost/](http://localhost/)
+ - [https://www.maplelawn.net/](https://www.maplelawn.net/)
+ - [TRASH ROBOT](http://trashrobot.org/)
