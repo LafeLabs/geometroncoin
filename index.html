@@ -16,26 +16,17 @@
 
     
     -->
-    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA/wAAAAD/AAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAREAAAAAAiAAEAAAAAACIAAQAAAAAAACABAAAAAAAAAgEAAAAAAwAAIQAAADAzMzMwMzMzMwMAAAEgAAAwAAAAAQIAAAAAAAABACAAAAAAAAEAAgAAAAAAAQAAIgAAAAABAAAiAAAAABEQAAAAAAAAAQAAAAD+/wAA/H8AAM7/AADO/wAA9v8AAPr/AAC8/QAAAAAAAL59AAD+vwAA/t8AAP7vAAD+8wAA/vMAAPx/AAD+/wAA" rel="icon" type="image/x-icon" />
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAP//AP///wANAP8A5Dz6ABueRwAAt/8A6BonABo86AAAAAA  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAREREREREREREREAAAEREREREQCIgREREd3dwAAB3d3d3d3d3d3d3d3d3d3d3d3d3VVVVVVVQAFVVAAVVVQIiBRAiIBEQIAIBECAAERAgAgFgIABmYCIiBmAiIGZgIiIGYCIgZmYCIAaIAAMzMzAAiIiIiIiIiIiIiIiIiIiIiIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
     
     <!--Stop Google:-->
     <META NAME="robots" CONTENT="noindex,nofollow">
 <!--geometron javascript library-->
     <script src="jscode/geometron.js"></script>
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
 </head>
 <body>
-
-<div id = "qrcode"></div>
-
-<a id = "namelink"></a>
-<a id = "maplink">MAP LINK</a>
-
 <div style = "display:none"><canvas id = "maincanvas"></canvas></div>
-
 <div id = "feed"></div>
-
-
 <script>
 
 feedwidth = 250;
@@ -60,12 +51,6 @@ httpcHypercube.onreadystatechange = function(){
         httpcFeed.onreadystatechange = function(){
             if (this.readyState == 4 && this.status == 200) {
                 geometroncoinfeed = JSON.parse(this.responseText);
-                qrcode.makeCode(geometroncoinfeed.url);
-                document.getElementById("namelink").href = geometroncoinfeed.url;
-                document.getElementById("namelink").innerHTML = geometroncoinfeed.name;
-                
-                document.getElementById("maplink").href = geometroncoinfeed.maplink;
-                
                 loadfeed();
             }
         };
@@ -84,7 +69,7 @@ array = [];
 function loadfeed(){
     gvmArray = [];
     document.getElementById("feed").innerHTML = "";
-    array = geometroncoinfeed.array;
+    array = geometroncoinfeed;
     
     for(var index = 0;index < array.length;index++){
         var newdiv = document.createElement("A");
@@ -117,54 +102,10 @@ function loadfeed(){
 
 
 
-codesquaresize = 80;
-marginsize = 40;
-fontsize = 12;
-
-//globalurl = "http://www.trashrobot.org/qrcode.html";
-globalurl = window.location.href.split("qrcode.html")[0];
-
-qrcode = new QRCode(document.getElementById("qrcode"), {
-	text: globalurl,
-	width: codesquaresize,
-	height: codesquaresize,
-	colorDark : "#000000",
-	colorLight : "#ffffff",
-	correctLevel : QRCode.CorrectLevel.H
-});
-
-
 </script>
 <style>
-#qrcode{
-    position:absolute;
-    top:50px;
-    left:0px;
-}
-#namelink{
-    position:absolute;
-    top:0px;
-    left:0px;
-    font-size:40px;
-    z-index:2;
-    font-family:courier;
-}
-#maplink{
-    position:absolute;
-    top:0px;
-    right:0px;
-    font-size:40px;
-    z-index:2;
-    font-family:courier;
-    
-}
 body{
     overflow:hidden;
-}
-#linktable{
-    position:absolute;
-    right:0px;
-    top:3em;
 }
 .deletebutton{
     width:20px;
@@ -175,45 +116,14 @@ body{
 }
 .feedelement{
 }
-#header{
+#feed{
     position:absolute;
     left:0px;
     right:0px;
     top:0px;
-    height:100px;
-}
-#footer{
-    position:absolute;
-    left:0px;
-    right:0px;
-    bottom:0px;
-    height:150px;
-}
-#textio{
-    position:absolute;
-    left:0px;
-    width:100%;
-    bottom:0px;
-    height:100px;
-}
-#feed{
-    position:absolute;
-    left:0px;
-    right:50%;
-    top:100px;
     bottom:0px;
     overflow:scroll;
     padding: 50px 50px 50px 50px;
-}
-#arduinocode{
-    position:absolute;
-    right:10px;
-    bottom:10px;
-    width:40%;
-    height:500px;
-    border:solid;
-    border-width:10px;
-    border-color:#00878F;
 }
 .button{
     cursor:pointer;
@@ -227,26 +137,7 @@ body{
 .data{
     display:none;
 }
-#glyphinput{
-    width:90%;
-    font-family:courier;
-    font-size:12px;
-}
-#arduinoinput{
-    border-color:#3186a0;
-}
-#helpbox{
-    position:absolute;
-    right:10px;
-    top:100px;
-    width:300px;
-    font-size:12px;
-    overflow:scroll;
-    height:100px;
-    background-color:black;
-    color:#00ff00;
-    font-family:courier;
-}
+
 </style>
 </body>
 </html>
