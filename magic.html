@@ -8,7 +8,7 @@
     <!--Stop Google:-->
     <META NAME="robots" CONTENT="noindex,nofollow">
 </head>
-<body>
+<body>  
 <table id = "toptable">
     <tr>
         <td>
@@ -37,6 +37,7 @@
             <input id = "hereinput"/>
         </td>
     </tr>
+
     <tr>
         <td id = "importbutton" class= "button">IMPORT</td>
     </tr>
@@ -101,6 +102,17 @@ function savejson(){
     httpc2.send("data="+encodeURIComponent(feedsource)+"&filename=data/feedsource.txt");//send text to filesaver.php
 }
 
+
+document.getElementById("importbutton").onclck = function(){
+    
+    geometroncoinfeed = JSON.parse(document.getElementById("textio").value);
+    var url = "filesaver.php";        
+    var httpc2 = new XMLHttpRequest();
+    httpc2.open("POST", url, true);
+    httpc2.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    httpc.send("data="+encodeURIComponent(JSON.stringify(geometroncoinfeed,null,"    "))+"&filename=data/geometroncoinfeed.txt");//send text to filesaver.php
+    
+}
 
 
 </script>

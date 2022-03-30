@@ -1,1 +1,1 @@
-https://raw.githubusercontent.com/LafeLabs/geometroncoin/main/
+http://10.0.0.27/geometroncoin/
