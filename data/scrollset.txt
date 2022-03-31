@@ -7,6 +7,7 @@
         "firebag",
         "flags",
         "home",
+        "iconsets",
         "mechanicals",
         "newcoin",
         "pi",

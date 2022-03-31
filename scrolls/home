@@ -3,15 +3,17 @@
 # Geometron Coin
 
  - [why?](scrolls/why)
- - [set up the pibrary on a windows machine or mac](scrolls/xampp)
- - [set up pibrary on a raspberry pi](scrolls/pi)
+ - [set up geometron coin server on a pc or mac](scrolls/xampp)
+ - [set up geometron coin server on a raspberry pi](scrolls/pi)
  - [build the robot brain](scrolls/brain)
  - [build the robot controller](scrolls/controller)
  - [build the mechanical elements of the robot](scrolls/mechanicals)
+ - [complete robot and ship to a user](scrolls/shipping)
+ - [ask for a robot, get it out and test it](scrolls/getrobot)
  - [create new icons](scrolls/newcoin)
- - print coins
- - replicate coins
- - icon sets
+ - [print coins](scrolls/printcoins)
+ - [replicate coins](scrolls/replicatecoins)
+ - [icon sets](scrolls/iconsets)
  - 3d printing icons
  - laser cutting icons
  - distribute coins

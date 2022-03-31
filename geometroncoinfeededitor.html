@@ -188,11 +188,21 @@ function loadcoinfeed(){
     gvmArray2 = [];
     document.getElementById("coinfeed").innerHTML = "";
     for(var index = 0;index < geometroncoinfeed.length;index++){
+    
+        var newtable = document.createElement("TABLE");
+        document.getElementById("coinfeed").appendChild(newtable);
+        var newtr = document.createElement("TR");
+        newtable.appendChild(newtr);
+
         var newdiv = document.createElement("span");
+        
+        var newtd = document.createElement("TD");
+        newtd.appendChild(newdiv);
+        newtr.appendChild(newtd);
         var newcan = document.createElement("CANVAS");
         newcan.className = "feedcan";
-        newdiv.style.marginTop = 0.05*feedwidth + "px";
-        newdiv.style.marginBottom = 0.05*feedwidth + "px";
+//        newdiv.style.marginTop = 0.05*feedwidth + "px";
+ //       newdiv.style.marginBottom = 0.05*feedwidth + "px";
         newdiv.appendChild(newcan);
         newdiv.className = "feedelement";
         newcan.classList.add("button");
@@ -201,9 +211,16 @@ function loadcoinfeed(){
         newGVM.hypercube = mainGVM.hypercube;
         gvmArray2.push(newGVM);
         newGVM.drawGlyph(geometroncoinfeed[index].coin);    
+
+
+        
+        
+        
         
         var newinput = document.createElement("INPUT");
-        newdiv.appendChild(newinput);
+        var newtd = document.createElement("TD");
+        newtr.appendChild(newtd);
+        newtd.appendChild(newinput);
         newinput.id = "index" + index.toString();
         newinput.value = geometroncoinfeed[index].url;
         newinput.onchange = function(){
@@ -213,9 +230,11 @@ function loadcoinfeed(){
             savecoinfeed();
         }
 
+        var newtd = document.createElement("TD");
+        newtr.appendChild(newtd);
         var newimg = document.createElement("IMG");
         newimg.src = "iconsymbols/delete.svg";
-        newdiv.appendChild(newimg);
+        newtd.appendChild(newimg);
         newimg.classList.add("button");
         newimg.classList.add("deletebutton");
         newimg.id = "if" + index.toString();
@@ -236,6 +255,58 @@ function loadcoinfeed(){
             loadcoinfeed();
         }
         
+        
+        var newtd = document.createElement("TD");
+        newtr.appendChild(newtd);
+        
+        var newimg = document.createElement("IMG");
+        newimg.src = "iconsymbols/moveup.svg";
+        newtd.appendChild(newimg);
+        newimg.classList.add("button");
+        newimg.classList.add("moveupbutton");
+        newimg.id = "id" + index.toString();
+        newimg.onclick = function(){
+            //find the index and remove that from the feed 
+            var thisindex = parseInt(this.id.substring(2));
+            if(thisindex != 0){
+                var tempfeed= [];
+                for(var robotindex = 0;robotindex < geometroncoinfeed.length;robotindex++){
+                    tempfeed.push(geometroncoinfeed[robotindex]);
+                }
+                tempfeed[thisindex] = geometroncoinfeed[thisindex - 1];
+                tempfeed[thisindex -1] = geometroncoinfeed[thisindex]; 
+                geometroncoinfeed = tempfeed;
+                savecoinfeed();
+                loadcoinfeed();
+                
+            }
+        }        
+        
+        var newtd = document.createElement("TD");
+        newtr.appendChild(newtd);
+        
+        var newimg = document.createElement("IMG");
+        newimg.src = "iconsymbols/movedown.svg";
+        newtd.appendChild(newimg);
+        newimg.classList.add("button");
+        newimg.classList.add("movedownbutton");
+        newimg.id = "iu" + index.toString();
+        newimg.onclick = function(){
+            //find the index and remove that from the feed 
+            var thisindex = parseInt(this.id.substring(2));
+            if(thisindex != geometroncoinfeed.length - 1){
+                var tempfeed= [];
+                for(var robotindex = 0;robotindex < geometroncoinfeed.length;robotindex++){
+                    tempfeed.push(geometroncoinfeed[robotindex]);
+                }
+                tempfeed[thisindex] = geometroncoinfeed[thisindex + 1];
+                tempfeed[thisindex + 1] = geometroncoinfeed[thisindex]; 
+                geometroncoinfeed = tempfeed;
+                savecoinfeed();
+                loadcoinfeed();
+                
+            }
+        }              
         
     }    
 }
@@ -344,11 +415,22 @@ body{
 .deletebutton{
     width:20px;
     z-index:2;
-    position:relative;
-    left:-100px;
-    top:-80px;
 }
+.moveupbutton{
+    width:20px;
+    z-index:2;
+}
+.movedownbutton{
+    width:20px;
+    z-index:2;
+}
+.feedcan{
+    margin-bottom:1em;
+}
+
 .feedelement{
+
+    
 }
 #header{
     position:absolute;
@@ -405,6 +487,10 @@ body{
     overflow:scroll;
     padding: 50px 50px 50px 50px;
     
+}
+#coinfeed table{
+    border-top:solid;
+    border-color:black;
 }
 .button{
     cursor:pointer;
