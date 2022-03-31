@@ -15,6 +15,7 @@ mkdir("data");
 mkdir("php");
 mkdir("jscode");
 mkdir("iconsymbols");
+mkdir("scrolls");
 
 
 copy("https://raw.githubusercontent.com/LafeLabs/geometroncoin/main/php/replicator.txt","replicator.php");
@@ -52,6 +53,13 @@ foreach($dna->php as $value){
 
 }
 
+foreach($dna->scrolls as $value){
+        
+    if($value == "home"){
+        copy($baseurl."scrolls/".$value,"scrolls/".$value);
+    }
+    
+}
 
 
 ?>
