@@ -1,6 +1,14 @@
 {
     "server": "https://raw.githubusercontent.com/LafeLabs/pibrary/main/geometroncoin/",
     "scrolls": [
-        "home"
+        "arduino",
+        "brain",
+        "controller",
+        "home",
+        "mechanicals",
+        "newcoin",
+        "pi",
+        "why",
+        "xampp"
     ]
 }
