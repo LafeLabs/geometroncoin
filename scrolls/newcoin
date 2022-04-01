@@ -1,19 +1,10 @@
 
 ## [HOME](scrolls/home)
 
-# newcoin
+# Create New Coins
+
+
  
-To create coins go to the [geometroncoin/](geometroncoin/) directory. Then click on the eight arrows of chaos to get to the coin feed editor.  If this is a system that has just been installed, you need to load the replicator in the directory which can be found at [geometroncoin/replicator.php](geometroncoin/replicator.php).
-
-From the coin feed editor, click the link "TRACE", then "ALIGN" and then "GLOBAL IMAGES".  Then go find an image on the Web of whatever you want to trace.  Drop the url of the image into the input in the "GLOBAL IMAGES" page.  Then click the "TRACE" link, then "ALIGN" to slide the image around, scale it up and down, and rotate it.  When you like how it is click the "SAVE" button. Then go to the "TRACE" page.  Use the keys to move the tool or draw pixel and move.  The keys a, s, d and f move with a pixel drawn, and the keys z,x,c and v move without drawing a pixel.  To change the color, click the numbers 2, 3, 4, 5, 6, and 7 for the colors red, orange, yellow, green, blue, and purple, and the "`" key for black.  To clear the glyph press the "|" key.  Backspace should delete a command, and arrow keys step through a command. There are also touch screen buttons on the screen.  
-
-When you like the finished Geometron glyph, hit the "SAVE" button.  Then you can go back to the "FEED EDITOR" to delete unwanted icons, put icons in the icon feed, associate them with links, or add new icon coin glyphs you drop in the input at the top of the screen.  You can take the coin feed from the text area at the bottom of the screen, and copy/paste it into another running Geometron coin server, then press the "IMPORT" button on the other server to add it to that coin feed.  To program into the robot, click the link "PROGRAM CLAY" and then program into the Arduino by clicking the icon you want to print, then copy/pasting the code from the code box into the Arduino IDE and uploading that program to the [Arduino](scrolls/arduino) in the [robot brain](scrolls/brain)
-
-install XAMPP on laptop
-
-install geometroncoin on xampp
-
-
 First, install XAMPP, a free open source web server for all platforms.  [Download from www.apachefriends.org](https://www.apachefriends.org/index.html).  Click on windows to download, and click through to install everything.
 
 ![](https://i.imgur.com/G90zeyE.png)
@@ -28,7 +19,6 @@ Click on "Explorer" to get access to where the files are.  From the main directo
 
 Point a web browser on the same computer to [http://localhost/](http://localhost), then click on replicator.php.  This should replicate the whole system into the directory.  When this is done, click the link to go to the main page.  
 
-
 Geometron Coin Feed:
 
 ![](https://i.imgur.com/WzzpO44.png)
@@ -41,11 +31,11 @@ Click "IMAGES" to get to the global image feed.  Then go find images on the Web,
 
 ![](https://i.imgur.com/IR6el87.png)
 
-Click the "ALIGN" link to go to the image aligner:
+Click the "ALIGN" link to go to the image aligner.  Move the image around by dragging it.  Use the buttons and sliders to scale and rotate the image.  Hit the "SAVE" button to save the state of the alignment.
 
 ![](https://i.imgur.com/kgTk4Yy.png)
 
-
+Click "TRACE" to go to the icon tracer page.  
 
 ![](https://i.imgur.com/RnqevGz.png)
 
