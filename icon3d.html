@@ -63,6 +63,7 @@
         <td><a href= "threejs.html">threejs.html</a></td>
         <td><a href = "threejsinvert.html">threejsinvert.html</a></td>
         <td><a href= "index.html">index.html</a></td>
+        <td><a href="geometroncoinfeededitor.html">feed editor</a></td>
     </tr>
 </table>
 <div id = "savebutton" class = "button">SAVE</div>
@@ -299,7 +300,7 @@ function save(){
     var httpc = new XMLHttpRequest();
     httpc.open("POST", url, true);
     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    httpc.send("data="+encodeURIComponent(filetop + "<scene>" + x3dcode + "</scene></x3d>" + "</scene></x3d>\n<a style = \"position:absolute;right:0px;bottom:0px;font-size:2em;\" href = \"voxel.html\">back to voxel</a>\n<a style = \"position:absolute;right:0px;bottom:3em;font-size:2em;\" href = \"icon3d.html\">back to icon3d</a></body></html>")+"&filename=three.html");//send text to filesaver.php    
+    httpc.send("data="+encodeURIComponent(filetop + "<scene>" + x3dcode + "</scene></x3d>" + "</scene></x3d>\n<a style = \"position:absolute;right:0px;bottom:3em;font-size:2em;\" href = \"icon3d.html\">back to icon3d</a></body></html>")+"&filename=three.html");//send text to filesaver.php    
 
     editmode = true;
     redraw();
@@ -430,8 +431,9 @@ input{
 }
 #linktable{
     position:absolute;
-    bottom:20px;
+    bottom:40px;
     right:130px;
+    z-index:1;
 }
 #savebutton{
     position:absolute;

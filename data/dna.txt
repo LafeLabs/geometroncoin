@@ -18,6 +18,7 @@
         "scrolleditor.html",
         "scrollset.html",
         "set.html",
+        "svgfeed.html",
         "three.html",
         "threejs.html",
         "threejsinvert.html",
@@ -35,6 +36,7 @@
         "hypercube.txt",
         "imagefeed.txt",
         "robotfeed.txt",
+        "scrollset.txt",
         "set.txt"
     ],
     "php": [
@@ -74,6 +76,8 @@
         "left.svg",
         "leftsmall.svg",
         "lightdark.svg",
+        "movedown.svg",
+        "moveup.svg",
         "right.svg",
         "rightsmall.svg",
         "rotate.svg",
@@ -85,5 +89,19 @@
         "uplink.svg",
         "www.svg"
     ],
-    "scrolls": []
+    "scrolls": [
+        "arduino",
+        "brain",
+        "controller",
+        "firebag",
+        "flags",
+        "home",
+        "iconsets",
+        "mechanicals",
+        "newcoin",
+        "pi",
+        "waterbag",
+        "why",
+        "xampp"
+    ]
 }

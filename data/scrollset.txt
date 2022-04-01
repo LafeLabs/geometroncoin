@@ -11,6 +11,7 @@
         "mechanicals",
         "newcoin",
         "pi",
+        "picrust",
         "waterbag",
         "why",
         "xampp"

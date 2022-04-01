@@ -9,5 +9,58 @@ From the coin feed editor, click the link "TRACE", then "ALIGN" and then "GLOBAL
 
 When you like the finished Geometron glyph, hit the "SAVE" button.  Then you can go back to the "FEED EDITOR" to delete unwanted icons, put icons in the icon feed, associate them with links, or add new icon coin glyphs you drop in the input at the top of the screen.  You can take the coin feed from the text area at the bottom of the screen, and copy/paste it into another running Geometron coin server, then press the "IMPORT" button on the other server to add it to that coin feed.  To program into the robot, click the link "PROGRAM CLAY" and then program into the Arduino by clicking the icon you want to print, then copy/pasting the code from the code box into the Arduino IDE and uploading that program to the [Arduino](scrolls/arduino) in the [robot brain](scrolls/brain)
 
+install XAMPP on laptop
 
+install geometroncoin on xampp
+
+
+First, install XAMPP, a free open source web server for all platforms.  [Download from www.apachefriends.org](https://www.apachefriends.org/index.html).  Click on windows to download, and click through to install everything.
+
+![](https://i.imgur.com/G90zeyE.png)
+
+After you download and install it, run it and start Apache.  You should see a control panel like this:
+
+![](https://i.imgur.com/wgpIqfH.png)
+
+Click on "Explorer" to get access to where the files are.  From the main directory called xamp, you want the sub-directory "htdocs".  Open this, delete the index.php file, and create a new file called replicator.php which you copy and paste the replicator at [php/replicator.txt](php/replicator.txt) into, and save.  
+
+![](https://i.imgur.com/EpHYYOd.png)
+
+Point a web browser on the same computer to [http://localhost/](http://localhost), then click on replicator.php.  This should replicate the whole system into the directory.  When this is done, click the link to go to the main page.  
+
+
+Geometron Coin Feed:
+
+![](https://i.imgur.com/WzzpO44.png)
+
+Click the eight arrows of CHAOS to get to the feed editor:
+
+![](https://i.imgur.com/iJzuy3j.png)
+
+Click "IMAGES" to get to the global image feed.  Then go find images on the Web, right click and copy the url of the image, then paste it in the text input at the top of the image feed page:
+
+![](https://i.imgur.com/IR6el87.png)
+
+Click the "ALIGN" link to go to the image aligner:
+
+![](https://i.imgur.com/kgTk4Yy.png)
+
+
+
+![](https://i.imgur.com/RnqevGz.png)
+
+
+![](https://i.imgur.com/XhZ4YhY.png)
+
+![](https://i.imgur.com/54uIiHF.png)
+
+![](https://i.imgur.com/5bTHu97.png)
+
+![](https://i.imgur.com/oULM1Dx.png)
+
+![](https://i.imgur.com/FbEsCBo.png)
+
+![](https://i.imgur.com/vkob7aZ.png)
+
+![](https://i.imgur.com/cuv5cVJ.png)
 
