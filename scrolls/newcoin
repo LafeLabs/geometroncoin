@@ -35,14 +35,31 @@ Click the "ALIGN" link to go to the image aligner.  Move the image around by dra
 
 ![](https://i.imgur.com/kgTk4Yy.png)
 
-Click "TRACE" to go to the icon tracer page.  
+Click "TRACE" to go to the icon tracer page.  To clear the glyph hit the vertical line key "|".  To move with a pixel drawn, use keys a, s, d, and f.  To move without drawing a pixel use the keys z, x, c,  and v.   Hit "enter" to switch between pixel draw mode and text mode, in which you can type and it will create letters using the Geometron pixel font(this is documented in the [First Book of Geometron](http://trashrobot.org/bookofgeometronfirst/)).  Arrow keys step through the Geometron glyph, allowing for it to be edited at any point in the program.  Actions are deleted using the backspace key.  Color is selected by selecting the numbers 2, 3, 4, 5, 6, and 7 for red, orange, yellow, green, blue, and purple.  The backtick key "`" selects the default color black again.  All of these can also be accessed by way of the touch screen keys in the other panel in the display.  Hit the SAVE button whenever a glyph is ready to be saved to the feed.  
 
 ![](https://i.imgur.com/RnqevGz.png)
 
+Once you have finished the design of an icon, you can print it by clicking the link to "PROGRAM CLAY PRINTER".  Note the icon you want to print and click on it.  When you do that the code in the rectangular text area in the lower right hand corner of the screen will change to have the correct robot motion sequence. This sequence is just a long string of letters representing robot movements. 
 
 ![](https://i.imgur.com/XhZ4YhY.png)
 
+After you have the Arduino program for the icon you want to print loaded in the browser, install the Arduino IDE, downloaded from [arduino.cc](https://www.arduino.cc/en/software) or click the "DOWNLOAD" link on the Arduino program page.  
+
+Connect the robot to the USB port of your laptop.  Test all 6 motions of the robot on the controller: up, down, left, right, forward, back.  
+
+Open the Arduino IDE, select Arduino UNO for the board type, then select a port which appears in the list of ports, and if it doesn't work try other ones at random until one does.  Then copy/paste the Arduino code from the window in the browser into the IDE and save the file as whatever the default file name is(we'll always replace it so these are disposable).   Upload to the board.  
+
 ![](https://i.imgur.com/54uIiHF.png)
+
+ - link to buy clay
+ - photo of ball of clay with ruler
+ - photo of pressed flat coin with ruler
+ - place on stage, center tool, photo of that
+ - photo of controller press the green button to start, press the red button to stop
+ - link to a tiktok of a print
+ - photos of all three bags, patterns for bags
+ - photos of the stages of replication from earth to fire to water
+ - photos of trash prints from stamps
 
 ![](https://i.imgur.com/5bTHu97.png)
 
