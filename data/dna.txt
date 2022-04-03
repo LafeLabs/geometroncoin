@@ -50,6 +50,7 @@
         "filesaver.txt",
         "ipaddress.txt",
         "mkdir.txt",
+        "public.txt",
         "rdelete.txt",
         "removephp.txt",
         "replicator.txt",
@@ -96,11 +97,15 @@
         "firebag",
         "flags",
         "home",
+        "hyperlink",
         "iconsets",
         "mechanicals",
         "newcoin",
         "pi",
+        "picrust",
+        "threed",
         "waterbag",
+        "webpage",
         "why",
         "xampp"
     ]
