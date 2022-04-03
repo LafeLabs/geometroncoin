@@ -4,6 +4,7 @@
         "arduino",
         "brain",
         "controller",
+        "earthbag",
         "firebag",
         "flags",
         "home",

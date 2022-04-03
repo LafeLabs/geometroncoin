@@ -2,6 +2,8 @@
 
 # Geometron Coin
 
+Self-replicating media.  Self-replicating set of icons which point to things. These icons represent a set of self-replicating sets.  All sets link back to themselves.
+
  - [why?](scrolls/why)
  - [set up geometron coin server on a pc or mac](scrolls/xampp)
  - [set up geometron coin server on a raspberry pi](scrolls/pi)
