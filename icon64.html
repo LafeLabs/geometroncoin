@@ -32,7 +32,7 @@
 <div id = "header">
 
     <input id = "glyphinput"/>
-
+    <input id = "png64input"/>
 </div>
 <div id = "feed"></div>
 
@@ -41,6 +41,20 @@
         <td>
             <a href = "index.html">HOME</a>
         </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "geometroncoinfeededitor.html">FEED EDITOR</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "icon.png">icon.png</a>
+        </td>
+    </tr>
+
+    <tr>
+        <td class=  "button" id  = "savebutton">SAVE</td>
     </tr>
 </table>
 <script>
@@ -130,6 +144,8 @@ function loadfeed(){
             //make this the coin for coin studio
             coin = glyph;
             
+            document.getElementById("png64input").value = mainGVM.pngcode();
+
         }
         
         
@@ -137,11 +153,26 @@ function loadfeed(){
 }
 
 document.getElementById("glyphinput").value = "";
+document.getElementById("png64input").value = "";
 
+document.getElementById("savebutton").onclick = function(){
+    savepng();
+}
 
+function savepng(){
+
+    var httpc = new XMLHttpRequest();
+    var url = "pngsave.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    httpc.send("data="+encodeURIComponent(mainGVM.pngcode().substring(22))+"&filename=icon.png");//send text to filesaver.php
+}
 
 </script>
 <style>
+#savebutton{
+    border:solid;
+}
 body{
     overflow:hidden;
 }
@@ -206,6 +237,12 @@ body{
     font-family:courier;
     font-size:12px;
 }
+#png64input{
+    width:90%;
+    font-family:courier;
+    font-size:12px;
+}
+
 #mainbox{
     position:absolute;
     right:0px;

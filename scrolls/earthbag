@@ -1,17 +1,41 @@
 ## [HOME](index.html)
 
-# earthbag
- 
- - photo of pattern for bag outline
- - photo of cutout cloth for bag
- - photos of both trash ties
- - photo of bag inside out 
- - photo of bag with coins in it
- - photo of acrylic square, square pattern, and green felt square
- - photo of a ball with ruler which is squashed into a coin
- - photo of coin squashed between two flats
- - photo of coin in printer 
- - photo of coin after print
- - screen shot of programming the Arduino
- - link to new coin creation scroll
- 
+# Earth Bag
+
+
+![](https://i.imgur.com/rdJtpiA.jpg)
+
+This is a cloth bag made from black cotton flannel with a 3 inch green felt square sewn on it.  The cloth is cut into a 13 by 8.5 inch rectangle.  An 18 inch section of nylon parachute cord is cut off and both ends burned.  This is stitched into a hem on the top of the bag, then the bag is double stitched while inside out.  The parachute cord(called a short trash tie) is then tied in a double half hitch to make it permanently in a loop.  Another 6 foot long length of clothesline which is taped at both ends is then threaded through this and tied in a double figure eight knot so that it is also a loop, and the bag can be freely carried over a shoulder or suspended from hooks on a crossbar, or tree branch or railing.  
+
+The Geometron Icon Coin for the Earth Bag:
+
+![](https://i.imgur.com/lepEZB1.jpg)
+
+Geometron byte code for the icon:
+```
+0504,0504,0504,0504,0504,0504,0504,0504,0504,0504,0502,0502,0502,0502,0504,0502,0504,0502,0502,0505,0502,0502,0507,0507,0507,0507,0507,0507,0507,0507,0503,0503,0504,0503,0503,0505,0503,0503,0505,0503,0503,0504,0503,0503,0501,0501,0501,0501,0501,0501,0507,0501,0501,0501,0507,0501,0501,0501,0507,0501,0507,0501,0501,0507,0501,0501,0501,0507,0501,0507,0501,0501,0501,0507,0501,0501,0507,0501,0501,0501,0501,0501,0507,0501,0501,0501,0506,0501,0501,0506,0501,0506,0501,0505,0502,0502,0505,0502,0502,0502,0505,0502,0502,0502,0502,0502,0505,0502,0502,0502,0502,0502,0502,0502,0502,0502,0502,0502,0502,0504,0502,0502,0502,0502,0502,0504,0502,0502,0504,0502,0502,0504,0502,0504,0502,0504,0502,0500,0506,0500,0500,0500,0500,0507,0500,0500,0500,0507,0500,0500,0500,0500,0507,0500,0500,0507,0500,0500,0507,0500,0500,0507,0500,0500,0500,0507,0500,0507,0500,0500,0507,0500,0500,0507,0500,0500,0500,0500,0500,0500,0500,0505,0505,0505,0507,0507,0503,0503,0503,0503,0503,0507,0507,0507,0503,0503,0503,0503,0503,0506,0506,0506,0506,0506,0506,0506,0506,0506,0506,0506,0506,0506,0506,0506,0506,0506,0502,0504,0502,0504,0502,0500,0500,0506,0500,0500,0500,0500,0500,0506,0500,0500,0500,0500,0500,0500,0500,0500,0500,0500,0500,0507,0507,0507,0501,0501,0501,0501,0501,0501,0501,0501,0501,0507,0501,0501,0501,0501,0501,0507,0501,0501,0501,0507,0505,0505,0505,0505,0505,0505,0505,0505,0505,0505,0505,0505,0505,0505,0505,0505,0507,0325,0507,0507,0507,0507,0507,0507,0507,0507,0507,0504,0504,0504,0504,0501,0506,0501,0506,0501,0506,0501,0506,0501,0506,0501,0506,0501,0507,0501,0507,0501,0507,0501,0507,0501,0507,0501,0507,0501,0507,0500,0507,0500,0507,0500,0507,0500,0507,0500,0507,0500,0506,0500,0506,0500,0506,0500,0506,0500,0506,0500,0504,0504,0504,0504,0506,
+```
+
+
+
+Sculpey polymer clay: get as much as you can. Roll into a sausage then separate into balls, and roll those round about an inch in diameter.
+
+![](https://i.imgur.com/B1Lyd2w.jpg)
+
+Squash between laser cut shapes to make flat on both sides:
+
+![](https://i.imgur.com/TDdFe8y.jpg)
+
+Position in the printer:
+
+![](https://i.imgur.com/KDI3mpN.jpg)
+
+Position the tool over the center of the coin, just a little bit up from the surface and hit the green go button on the controller. The robot prints:
+
+![](https://i.imgur.com/wAIs7nj.jpg)
+
+Keep printing until you have built up a whole symbolic language specific to whatever you are doing. This is a [generalized philosophical language, as envisioned by Leibniz](http://trashrobot.org/geometronmagic/). 
+
+When you have a bunch of these, put them in an Earth Bag.  This is made by  
+
+
