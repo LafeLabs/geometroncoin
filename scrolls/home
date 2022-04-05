@@ -1,21 +1,27 @@
-## [FEED](index.html)
+## [HOME](index.html)
 
-# Geometron Coin
+# [PIBRARY](https://github.com/LafeLabs/pibrary/blob/main/README.md)
 
-Self-replicating media.  Self-replicating set of icons which point to things. These icons represent a set of self-replicating sets.  All sets link back to themselves.
+The pibrary is a self-replicating knowledge network of free books propagated using the [Raspberry Pi](https://www.raspberrypi.org), a cheap open source computer we give out for free to the community.    
 
- - [set up geometron coin server on a pc or mac](scrolls/xampp)
- - [set up geometron coin server on a raspberry pi](scrolls/pi)
- - [build the robot brain](scrolls/brain)
- - [build the robot controller](scrolls/controller)
- - [build the mechanical elements of the robot](scrolls/mechanicals)
- - [create new icons](scrolls/newcoin)
- - [print coins](scrolls/printcoins)
- - [replicate coins](scrolls/replicatecoins)
- - [icon sets](scrolls/iconsets)
- - [picrust](scrolls/picrust)
- - [3d printing icons](scrolls/threed)
- - [laser cutting icons](scrolls/lasershapes)
- - [artbox](scrolls/artbox)
- - [fly flag linking to page](scrolls/flags)
- - replicate web page
+Books written by [TRASH ROBOT](https://www.trashrobot.org) are PUBLIC DOMAIN with no copyright whatsoever.  To install system read the [README file](scroll(README.md))
+
+## The Trash Robot Pibrary 
+
+This is a library of books created by Trash Robot:
+
+ - [Buy NEW book!! Geometron Magic hardcopy 1/20/22](https://www.lulu.com/en/us/shop/trash-robot/geometron-magic/paperback/product-y6p96w.html)
+ - [Geometron Magic Web Book](geometronmagic/)
+ - [Geometron Magic letter size pdf](https://raw.githubusercontent.com/LafeLabs/pibrary/main/geometronmagic/main-large.pdf)
+ - [Edge Physics Network](edgephysics/)
+ - [Edge Media Network](edgemedia/)
+ - [Trash Magic Action Coloring Book](tmacb/)
+ - [First Book of Geometron Web Book](bookofgeometronfirst/)
+ - [First Book of Geometron letter size .pdf](https://github.com/LafeLabs/bookofgeometron/raw/main/main-bigpaper.pdf)
+ - [First Book of Geometron bound copy purchase](https://www.lulu.com/en/us/shop/lafe-spietz/geometron/paperback/product-qqk98g.html)
+ - [Trash Magic Manifesto .pdf](https://lafelabs.github.io/Trash_Magic_Manifesto.pdf)
+ - [Trash Magic Manifesto for sale on Lulu](https://www.lulu.com/en/us/shop/lafe-spietz/trash-magic-manifesto-and-action-coloring-book/paperback/product-1km4deev.html?page=1&pageSize=4)
+ - [Book of the Trash Robot Factory](factory/)
+ - [PI CRUST Media Platform](https://github.com/LafeLabs/picrust/blob/main/README.md)
+ - [CHAOS](chaos/)
+ - [HYPE](hype/)
