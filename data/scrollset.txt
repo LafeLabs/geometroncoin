@@ -1,5 +1,5 @@
 {
-    "server": "https://raw.githubusercontent.com/LafeLabs/pibrary/main/geometroncoin/",
+    "server": "https://raw.githubusercontent.com/LafeLabs/geometroncoin/main/",
     "scrolls": [
         "arduino",
         "artbox",
