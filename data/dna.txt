@@ -110,6 +110,7 @@
         "pi",
         "picrust",
         "threed",
+        "trashmagic",
         "waterbag",
         "webpage",
         "why",
