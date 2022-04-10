@@ -76,10 +76,8 @@ Copy [Arduino code from github](https://github.com/LafeLabs/trashrobot5/blob/mas
 
 To operate robot, follow the path of the [workflow map](maps/workflow) to find images, align them, trace them into robot code, program them into robots, and share them with other people.
 
-
-
-
-
+ - [link to arduino xyz](programarduinoxyz.html)
+ - [link to arduino with bridge tool](programarduino.html)
 
 
 
