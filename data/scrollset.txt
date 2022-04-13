@@ -8,6 +8,7 @@
         "earthbag",
         "firebag",
         "flags",
+        "goldentriangle",
         "home",
         "hyperlink",
         "iconsets",
