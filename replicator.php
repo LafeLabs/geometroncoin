@@ -16,6 +16,7 @@ mkdir("php");
 mkdir("jscode");
 mkdir("iconsymbols");
 mkdir("scrolls");
+mkdir("symbolfeed");
 
 
 copy("https://raw.githubusercontent.com/LafeLabs/geometroncoin/main/php/replicator.txt","replicator.php");
