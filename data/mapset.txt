@@ -1,6 +1,7 @@
 {
     "server": "https://raw.githubusercontent.com/LafeLabs/geometroncoin/main/",
     "maps": [
+        "foo",
         "home"
     ],
     "images": [

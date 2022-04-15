@@ -62,6 +62,7 @@
         "scrollset.txt",
         "set.txt",
         "symbolset.txt",
+        "textfeed.txt",
         "wall.txt"
     ],
     "php": [
@@ -74,6 +75,7 @@
         "fileloader.txt",
         "filesaver.txt",
         "ipaddress.txt",
+        "mapbook.php",
         "mapeditor.txt",
         "mapsetreplicator.txt",
         "mkdir.txt",
