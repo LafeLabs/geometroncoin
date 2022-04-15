@@ -44,7 +44,7 @@ roctal scroll converts any text document to a roctal tablet for printing and sca
             <a href = "user.php">SCROLLS</a>
         </td>
         <td>
-            <a href = "iconsymbols/roctalscroll.svg">iconsymbols/roctalscroll.svg</a>
+            <a href = "symbolfeed/roctalscroll.svg">symbolfeed/roctalscroll.svg</a>
         </td>
 
     </tr>
@@ -132,7 +132,7 @@ function savesymbolfile(){
     var httpc2 = new XMLHttpRequest();
     httpc2.open("POST","filesaver.php", true);
     httpc2.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    httpc2.send("data="+encodeURIComponent(mainGVM.svgString) +"&filename=iconsymbols/roctalscroll.svg");//send text to filesaver.php
+    httpc2.send("data="+encodeURIComponent(mainGVM.svgString) +"&filename=symbolfeed/roctalscroll.svg");//send text to filesaver.php
     
     
 }

@@ -177,8 +177,6 @@
         "robot.svg",
         "robotconfig.svg",
         "robotsymbolmode.svg",
-        "roctal.svg",
-        "roctalscroll.svg",
         "rotate.svg",
         "rulers.png",
         "rulers.svg",
@@ -238,6 +236,7 @@
         "xampp"
     ],
     "maps": [
+        "foo",
         "home"
     ]
 }

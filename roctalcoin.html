@@ -49,7 +49,7 @@ this program creates roctal images to scan in to get glyph for coins. use this t
             <a href = "geometroncoinfeededitor.html">FEED EDITOR</a>
         </td>
         <td>
-            <a href = "iconsymbols/roctal.svg">iconsymbols/roctal.svg</a>
+            <a href = "symbolfeed/roctal.svg">symbolfeed/roctal.svg</a>
         </td>
 
     </tr>
@@ -189,7 +189,7 @@ function savesymbolfile(){
     var httpc2 = new XMLHttpRequest();
     httpc2.open("POST","filesaver.php", true);
     httpc2.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    httpc2.send("data="+encodeURIComponent(mainGVM.svgString) +"&filename=iconsymbols/roctal.svg");//send text to filesaver.php
+    httpc2.send("data="+encodeURIComponent(mainGVM.svgString) +"&filename=symbolfeed/roctal.svg");//send text to filesaver.php
     
     
 }
