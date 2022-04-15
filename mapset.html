@@ -8,15 +8,15 @@
     <!--Stop Google:-->
     <META NAME="robots" CONTENT="noindex,nofollow">
 </head>
-<body>    
+<body>
 <table id = "toptable">
     <tr>
         <td>
-            <a href = "symbol.html">
+            <a href = "index.html">
                 <img src = "iconsymbols/home.svg"/>
             </a>
         </td>
-        </tr>
+    </tr>
 </table>
 <table>
     <tr>
@@ -35,56 +35,87 @@
 </table>
 
 
-<a href = "symbolsetreplicator.php" id = "fetchlink">
+<a href = "mapsetreplicator.php" id = "fetchlink">
 (!)CLICK TO FETCH SET FROM SOURCE TO HERE(!)
 </a>
 
 <textarea id  = "textio"></textarea>
 <script>
 
-var localurl = window.location.href.split("symbolset.html")[0];
+var localurl = window.location.href.split("mapset.html")[0];
 document.getElementById("hereinput").value = localurl;
 
-symbolset = {};
+mapset = {};
 
 var httpc = new XMLHttpRequest();
     httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        symbolset = JSON.parse(this.responseText);
-        if(symbolset.server.charAt(symbolset.server.length-1) != "/"){
-            symbolset.server = symbolset.server + "/"; 
+        mapset = JSON.parse(this.responseText);
+        if(mapset.server.charAt(mapset.server.length-1) != "/"){
+            mapset.server = mapset.server + "/"; 
         }
-        document.getElementById("sourceinput").value = symbolset.server;
+        document.getElementById("sourceinput").value = mapset.server;
         var httpc9 = new XMLHttpRequest();
         httpc9.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
 
-                allsymbols = JSON.parse(this.responseText);
-                symbols = [];
-                for(var index = 0;index < allsymbols.length;index++){
-                    if(allsymbols[index].substr(-4) == ".svg"){
-                        symbols.push(allsymbols[index]);
-                    }
+                maps = JSON.parse(this.responseText);
+                mapset.maps = maps;
+                
+                var httpc11 = new XMLHttpRequest();
+                httpc11.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+        
+                        images = JSON.parse(this.responseText);
+                        mapset.images = images;
+                        
+                        
+                        var httpc13 = new XMLHttpRequest();
+                        httpc13.onreadystatechange = function() {
+                            if (this.readyState == 4 && this.status == 200) {
+                
+                                scrolls = JSON.parse(this.responseText);
+                                mapset.scrolls = scrolls;
+                                
+                        
+                                document.getElementById("textio").value = JSON.stringify(mapset,null,"    ");
+                                savejson();
+                                
+                                
+                            };
+                        }
+                        
+                        httpc13.open("GET", "dir.php?filename=scrolls", true);
+                        httpc13.send();
+
+                        
+                        
+                    };
                 }
-                symbolset.symbols = symbols;
-                document.getElementById("textio").value = JSON.stringify(symbolset.symbols,null,"    ");
+                
+                httpc11.open("GET", "dir.php?filename=uploadimages", true);
+                httpc11.send();
+
+                
+                
+                document.getElementById("textio").value = JSON.stringify(mapset.maps,null,"    ");
                 savejson();
 
             };
         }
         
-        httpc9.open("GET", "dir.php?filename=symbolfeed", true);
+        httpc9.open("GET", "dir.php?filename=maps", true);
         httpc9.send();
         
     }
 };
-httpc.open("GET", "fileloader.php?filename=data/symbolset.txt", true);
+httpc.open("GET", "fileloader.php?filename=data/mapset.txt", true);
 httpc.send();
 
 document.getElementById("sourceinput").onchange = function(){
-    symbolset.server = this.value;
-    if(symbolset.server.charAt(symbolset.server.length-1) != "/"){
-        symbolset.server = symbolset.server + "/"; 
+    mapset.server = this.value;
+    if(mapset.server.charAt(mapset.server.length-1) != "/"){
+        mapset.server = mapset.server + "/"; 
     }
     savejson();
 }
@@ -94,17 +125,13 @@ function savejson(){
     var httpc2 = new XMLHttpRequest();
     httpc2.open("POST", url, true);
     httpc2.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    httpc2.send("data="+encodeURIComponent(JSON.stringify(symbolset,null,"    "))+"&filename=data/symbolset.txt");//send text to filesaver.php
+    httpc2.send("data="+encodeURIComponent(JSON.stringify(mapset,null,"    "))+"&filename=data/mapset.txt");//send text to filesaver.php
 }
 
 
 
 </script>
 <style>
-#toptable{
-    background-color:#808080;
-}
-
 #buttontable{
     position:absolute;
     right:0px;
@@ -146,13 +173,12 @@ function savejson(){
 }
 body,div,textarea,input{
     font-family:courier;
-    background-color:#808080;
     font-size:24px;
-    border-color:black;
 }
 a{
     font-family:courier;
     font-size:24px;
+    color:#ff2cb4;
 }
 
 .button{

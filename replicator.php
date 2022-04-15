@@ -17,6 +17,10 @@ mkdir("jscode");
 mkdir("iconsymbols");
 mkdir("scrolls");
 mkdir("symbolfeed");
+mkdir("uploadimages");
+mkdir("maps");
+mkdir("images");
+mkdir("media");
 
 
 copy("https://raw.githubusercontent.com/LafeLabs/geometroncoin/main/php/replicator.txt","replicator.php");
@@ -57,9 +61,15 @@ foreach($dna->php as $value){
 foreach($dna->scrolls as $value){
         
 //    if($value == "home"){
-        copy($baseurl."scrolls/".$value,"scrolls/".$value);
+    copy($baseurl."scrolls/".$value,"scrolls/".$value);
   //  }
     
+}
+
+foreach($dna->maps as $value){
+        
+    copy($baseurl."maps/".$value,"maps/".$value);
+
 }
 
 

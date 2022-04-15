@@ -11,8 +11,13 @@
         "icon3d.html",
         "icon64.html",
         "iconfeed.html",
+        "imagefeed.html",
         "index.html",
         "magic.html",
+        "mapbook.html",
+        "mapdelete.html",
+        "mapset.html",
+        "picrust.html",
         "programarduino.html",
         "programarduinoxyz.html",
         "qrcode.html",
@@ -51,10 +56,13 @@
         "glyph3d.txt",
         "hypercube.txt",
         "imagefeed.txt",
+        "ipaddress.txt",
+        "mapset.txt",
         "robotfeed.txt",
         "scrollset.txt",
         "set.txt",
-        "symbolset.txt"
+        "symbolset.txt",
+        "wall.txt"
     ],
     "php": [
         "copy.txt",
@@ -66,6 +74,8 @@
         "fileloader.txt",
         "filesaver.txt",
         "ipaddress.txt",
+        "mapeditor.txt",
+        "mapsetreplicator.txt",
         "mkdir.txt",
         "pngsave.txt",
         "public.txt",
@@ -78,12 +88,14 @@
         "setreplicator.txt",
         "symbolsetreplicator.txt",
         "text2php.txt",
+        "upload.txt",
         "uploadsymbol.txt",
         "user.txt"
     ],
     "javascript": [
         "geometron.js",
         "lasercutfont.js",
+        "mapfactory.js",
         "robotfont.js",
         "trashrobotfont.js"
     ],
@@ -222,5 +234,8 @@
         "webpage",
         "why",
         "xampp"
+    ],
+    "maps": [
+        "home"
     ]
 }
